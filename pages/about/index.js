@@ -20,6 +20,10 @@ import {
   SiNextdotjs,
   SiAdobexd,
   SiAdobephotoshop,
+  SiDocker,
+  SiGithubactions,
+  SiGnubash,
+  SiJenkins,
   SiNestjs,
   SiKotlin,
   SiExpo,
@@ -51,6 +55,22 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
 
+const N8nIcon = (props) => (
+  <svg viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" {...props}>
+    <rect x="2.5" y="2.5" width="19" height="19" rx="6" fill="currentColor" opacity="0.25" />
+    <text
+      x="12"
+      y="15.2"
+      textAnchor="middle"
+      fontSize="8.5"
+      fontWeight="700"
+      fill="currentColor"
+      style={{ letterSpacing: '0.6px' }}
+    >
+      n8n
+    </text>
+  </svg>
+);
 
 //  data
 export const aboutData = [
@@ -127,7 +147,7 @@ export const aboutData = [
           <SiCanva key={52} />, 
           <SiBuffer key={40} />,
           <SiGoogleads key={54} />, 
-          <SiWordpress key={54} />, 
+          <SiWordpress key={55} />, 
 
         ],
       },
@@ -155,6 +175,18 @@ export const aboutData = [
           <TbBrandReactNative key={11} />,
           <SiExpo key={12} />,
           <SiFlutter key={12} />,
+        ],
+      },
+
+      {
+        title: 'DevOps & Automation',
+        icons: [
+          <SiDocker key={56} />,
+          <SiJenkins key={57} />,
+          <SiGithubactions key={58} />,
+          <N8nIcon key={59} />,
+          <SiPython key={60} />,
+          <SiGnubash key={61} />,
         ],
       },
       
@@ -202,6 +234,11 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
+        title: 'Full Stack Developer - Tempus Donum',
+        school: 'Collaborate with development teams to ensure code quality, maintain and update existing projects, fix bugs, and help migrate monolithic systems to decoupled frontend/backend architectures. Stack: JavaScript, Next.js, Node.js, Django, WordPress, PostgreSQL, MongoDB.',
+        stage: 'August 2025 - Present',
+      },
+      {
         title: 'WordPress Developer - Freelance',
         school: 'Building and customizing WordPress websites for clients, ensuring optimal performance and user experience.',
         stage: 'November 2024 - Present',
@@ -227,14 +264,24 @@ export const aboutData = [
     title: 'formations & credentials',
     info: [
       {
+        title: "Software Engineering (M2)",
+        school: "IES-AV (Institut d'Enseignement Superieur d'Antsirabe Vakinankaratra)",
+        stage: '2025',
+      },
+      {
+        title: 'Freelancing (Certified)',
+        school: "Ministere de l'Enseignement Technique et de la Formation Professionnelle",
+        stage: '2025',
+      },
+      {
         title: 'Fundamentals of Communication',
         school: 'Orange Digital Center',
-        stage: 'January 2025',
+        stage: '2025',
       },
       {
         title: 'Digital Marketing',
         school: 'Orange Digital Center',
-        stage: 'December 2024',
+        stage: '2024',
       },
       
       {
@@ -251,11 +298,6 @@ export const aboutData = [
         title: 'Third Year of Bachelor’s in Software Engineering (L3)',
         school: 'IES-AV (Institut d’Enseignement Supérieur d’Antsirabe Vakinankaratra)',
         stage: '2023',
-      },
-      {
-        title: 'Baccalaureate Series D ',
-        school: 'Lycée Sainte Famille Anosivavaka Ambohimanarina',
-        stage: '2018',
       },
     ],
   },
@@ -327,21 +369,21 @@ const About = () => {
                 {/* Experience */}
                 <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 pr-5'>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                    <CountUp start={0} end={4} duration={7} />
+                    <CountUp start={0} end={5} duration={5} />
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Years of Study</div>
                 </div>
                 {/* Clients */}
                 <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                    <CountUp start={0} end={10} duration={7} />+
+                    <CountUp start={0} end={15} duration={7} />+
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Projects</div>
                 </div>
                 {/* Projects */}
                 <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                    <CountUp start={0} end={8} duration={7} />+
+                    <CountUp start={0} end={11} duration={5} />+
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Completed Projects</div>
                 </div>

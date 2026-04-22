@@ -62,7 +62,7 @@ export default function Modal({ isOpen, closeModal, content }) {
               alt={content.title}
               width={1000}
               height={1000}
-              className="rounded-lg w-full h-full object-cover" 
+              className={`rounded-lg w-full h-full object-cover ${content.imageClassName || 'object-center'}`} 
             />
           </div>
 

@@ -24,7 +24,7 @@ const Socials = () => {
         </Link>
 
         <Link
-            href="https://www.linkedin.com/in/iorenantsoa-c%C3%A9dric-antsamalala-065615245/" 
+            href="https://www.linkedin.com/in/iorenantsoa-cédric-antsamalala-226389337" 
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent transition-all duration-300 text-[#F1F1F1]"

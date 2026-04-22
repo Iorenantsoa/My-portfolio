@@ -70,7 +70,7 @@ const Home = () => {
                 <ReactTyped
                   strings={[
                     // " Hi, I’m  <span className='font-medium text-lg'>Ratsimbazafy Iorenantsoa Cédric Antsamalala</span>, Passionate about new technologies and eager to learn, with motivation to tackle challenges and explore new opportunities. Curious and proactive in applying skills and making a meaningful contribution to innovative projects."
-                    "Hi, I’m <span className='font-medium text-lg'>Ratsimbazafy Iorenantsoa Cédric Antsamalala</span>, a passionate digital marketer and developer. I thrive on crafting impactful digital strategies and building innovative solutions. Always eager to learn, I embrace challenges and turn ideas into growth opportunities."
+                    "Hi, I'm <span className='font-medium text-lg'>Iorenantsoa Cédric Antsamalala</span>, a passionate digital marketer and developer. I thrive on crafting impactful digital strategies and building innovative solutions. Always eager to learn, I embrace challenges and turn ideas into growth opportunities."
                   ]}
                   typeSpeed={10}
                 />
